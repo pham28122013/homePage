@@ -1,0 +1,58 @@
+.barlow-16-black-italic-uppercase {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.barlow-18-black-italic-uppercase {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.barlow-32-black-italic-uppercase {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #FFD700;
+}
+
+.inter-14-medium-uppercase {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.inter-14-regular-uppercase {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #D2D2D2;
+}
+
+@media (max-width: 600px) {
+  .barlow-32-black-italic-uppercase {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .inter-14-regular-uppercase {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+}

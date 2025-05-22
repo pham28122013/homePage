@@ -1,0 +1,28 @@
+.footer {
+  border-top: 1px solid #444;
+  padding: 0;
+  .footer-link {
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+    margin-bottom: 4px;
+    justify-content: flex-start;
+    &:hover {
+      opacity: 1;
+      background: transparent;
+    }
+  }
+
+  .v-row {
+    margin-left: -24px;
+    margin: 0;
+  }
+
+  .install-app-img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border-radius: 8px;
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}

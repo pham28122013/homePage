@@ -1,0 +1,21 @@
+.carousel-controls {
+  display: flex;
+}
+
+.carousel-control {
+  background-color: rgba(48, 48, 48, 0.5) !important;
+  margin: 0 4px;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.responsive-height-img {
+  height: 240px;
+}
+
+@media (max-width: 600px) {
+  .responsive-height-img {
+    height: 170px;
+  }
+}
