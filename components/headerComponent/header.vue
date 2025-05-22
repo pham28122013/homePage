@@ -108,7 +108,6 @@
       <v-list-item 
         v-for="(item, i) in menuItemsRef" 
         :key="i"
-        to="/homePage"
         @click="drawer = false"
         class="mobile-menu-item mb-4 justify-center"
         :class="{ 'active-menu-item': $route.path === item.route }"

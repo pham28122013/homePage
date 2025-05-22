@@ -14,7 +14,7 @@ export const itemsSliderMobile = [
 ]
 
 export const menuItems = [
-  { title: 'HOME', route: '/homePage' },
+  { title: 'HOME', route: '/homePage/' },
   { title: 'ITEMS1', route: '/items1' },
   { title: 'ITEMS2', route: '/items2' },
   { title: 'ITEMS3', route: '/items3' },

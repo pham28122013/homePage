@@ -1,13 +1,13 @@
+// nuxt.config.ts
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   app: {
-    baseURL: process.env.NUXT_APP_BASE_URL || '/'
+     baseURL: process.env.NUXT_APP_BASE_URL || '/'
   },
   nitro: {
     preset: 'static',
     prerender: {
-      routes: ['/homePage'],
       crawlLinks: true
     }
   },
