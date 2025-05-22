@@ -4,6 +4,15 @@ export default defineNuxtConfig({
   app: {
     baseURL: process.env.NUXT_APP_BASE_URL || '/'
   },
+   nitro: {
+    preset: 'static',
+    prerender: {
+      routes: [
+        '/',
+        '/homePage'
+      ]
+    }
+  },
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
   css: [
