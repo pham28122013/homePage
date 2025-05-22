@@ -22,17 +22,20 @@ export default defineNuxtConfig({
   ssr: false,
   
   app: {
-    baseURL: process.env.NUXT_APP_BASE_URL || '/',
+    baseURL: process.env.NODE_ENV === 'production' ? '/homePage/' : '/',
     buildAssetsDir: 'assets'
   },
-  
-  // Prerender các routes cho GitHub Pages
+
   nitro: {
+    preset: 'static',
     prerender: {
-      routes: [
-        '/',
-        '/homePage'
-      ]
+      routes: ['/', '/homePage']
+    }
+  },
+
+  vite: {
+    optimizeDeps: {
+      exclude: ['oxc-parser']
     }
   },
   
