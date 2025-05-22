@@ -16,7 +16,7 @@
 
     <!-- Logo -->
     <div class="d-flex align-center ml-md-4">
-      <nuxt-link to="/" class="d-flex align-center text-decoration-none">
+      <nuxt-link to="/homePage" class="d-flex align-center text-decoration-none">
         <img 
           src="/images/header/logo.png" 
           alt="ZTECH Logo" 
@@ -31,7 +31,7 @@
       <v-btn 
         v-for="(item, i) in menuItemsRef" 
         :key="i"
-        :to="item.route"
+        to="/homePage"
         variant="text"
         class="mx-2 nav-btn inter-14-medium-uppercase"
         :class="{ 'text-yellow font-weight-bold': $route.path === item.route }"
@@ -47,14 +47,14 @@
       <v-btn 
         rounded="pill" 
         class="sign-up-btn barlow-16-black-italic-uppercase mr-2"
-        :to="'/signup'"
+        to="/homePage"
       >
         SIGN UP
       </v-btn>
       <v-btn
         rounded="pill" 
         class="log-in-btn barlow-16-black-italic-uppercase"
-        :to="'/login'"
+        to="/homePage"
       >
         LOG IN
       </v-btn>
@@ -87,7 +87,7 @@
         <v-btn 
           rounded="pill" 
           class="sign-up-btn barlow-16-black-italic-uppercase mr-2"
-          :to="'/signup'"
+          to="/homePage"
           @click="drawer = false"
         >
           SIGN UP
@@ -95,7 +95,7 @@
         <v-btn
           rounded="pill" 
           class="log-in-btn barlow-16-black-italic-uppercase"
-          :to="'/login'"
+          to="/homePage"
           @click="drawer = false"
         >
           LOG IN
@@ -108,7 +108,7 @@
       <v-list-item 
         v-for="(item, i) in menuItemsRef" 
         :key="i"
-        :to="item.route"
+        to="/homePage"
         @click="drawer = false"
         class="mobile-menu-item mb-4 justify-center"
         :class="{ 'active-menu-item': $route.path === item.route }"
@@ -138,7 +138,7 @@
       <nuxt-link 
         v-for="(feature, i) in featuresRef" 
         :key="i"
-        :to="feature.route" 
+        to="/homePage"
         class="feature-item"
       >
         <div class="feature-icon-wrapper">
