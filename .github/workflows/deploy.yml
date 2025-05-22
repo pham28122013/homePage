@@ -4,6 +4,10 @@ on:
   push:
     branches: [ main ]
 
+# ✅ Thêm quyền ghi cho github-actions[bot]
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: windows-latest
