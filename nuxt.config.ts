@@ -2,7 +2,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   app: {
-    baseURL: '/'
+    baseURL: process.env.NUXT_APP_BASE_URL || '/'
   },
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
