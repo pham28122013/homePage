@@ -1,5 +1,5 @@
 <script setup>
-onMounted(() => {
-  navigateTo('/homePage')
+definePageMeta({
+  redirect: '/homePage'
 })
 </script>
