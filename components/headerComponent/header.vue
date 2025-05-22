@@ -167,11 +167,11 @@ const items = computed(() => (isMobile.value ? itemsSliderMobile : itemsSliderDe
 const menuItemsRef = ref(menuItems)
 const featuresRef = ref(features)
 const handleDrawerChange = (val) => {
-  document.body.style.overflow = val ? 'hidden' : ''
+  document.body.style.overflow = val ? 'hidden' : '';
 }
 
 watch(drawer, (val) => {
-  document.body.style.overflow = val ? 'hidden' : ''
+  document.body.style.overflow = val ? 'hidden' : '';
 })
 
 onMounted(() => {
