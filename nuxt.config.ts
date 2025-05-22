@@ -4,17 +4,13 @@ export default defineNuxtConfig({
   app: {
     baseURL: process.env.NUXT_APP_BASE_URL || '/'
   },
-   nitro: {
+  nitro: {
     preset: 'static',
     prerender: {
-      routes: [
-        '/',
-        '/homePage'
-      ]
+      routes: ['/homePage'],
+      crawlLinks: true
     }
   },
-  compatibilityDate: '2025-05-15',
-  devtools: { enabled: true },
   css: [
     'vuetify/styles',
     '@mdi/font/css/materialdesignicons.min.css',

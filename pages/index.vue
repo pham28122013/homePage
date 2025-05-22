@@ -1,5 +1,10 @@
 <script setup>
+const router = useRouter()
+const config = useRuntimeConfig()
+
 onMounted(() => {
-  navigateTo('/homePage')
+  if (config.app.baseURL !== '/') {
+    router.push(config.app.baseURL)
+  }
 })
 </script>
