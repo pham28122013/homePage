@@ -1,16 +1,16 @@
 export const itemsSliderDesktop = [
-  { src: '/images/header/slider-desktop.png' },
-  { src: '/images/header/slider-desktop.png' },
-  { src: '/images/header/slider-desktop.png' }
+  { src: 'images/header/slider-desktop.png' },
+  { src: 'images/header/slider-desktop.png' },
+  { src: 'images/header/slider-desktop.png' }
 ]
 
 export const itemsSliderMobile = [
-  { src: '/images/header/slider-mobile.png' },
-  { src: '/images/header/slider-mobile.png' },
-  { src: '/images/header/slider-mobile.png' },
-  { src: '/images/header/slider-mobile.png' },
-  { src: '/images/header/slider-mobile.png' },
-  { src: '/images/header/slider-mobile.png' }
+  { src: 'images/header/slider-mobile.png' },
+  { src: 'images/header/slider-mobile.png' },
+  { src: 'images/header/slider-mobile.png' },
+  { src: 'images/header/slider-mobile.png' },
+  { src: 'images/header/slider-mobile.png' },
+  { src: 'images/header/slider-mobile.png' }
 ]
 
 export const menuItems = [

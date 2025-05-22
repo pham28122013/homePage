@@ -125,7 +125,7 @@
     <div class="hero-section">
       <v-carousel :show-arrows="false" class="full-carousel">
         <v-carousel-item v-for="(item, i) in items" :key="i">
-          <img :src="item.src" alt="Carousel" class="carousel-img" loading="lazy" />
+          <img :src="resolveSrc(item.src)" alt="Carousel" class="carousel-img" loading="lazy" />
         </v-carousel-item>
       </v-carousel>
     </div>
@@ -141,7 +141,7 @@
         class="feature-item"
       >
         <div class="feature-icon-wrapper">
-          <img :src="`/images/header/${feature.icon}`" :alt="feature.title" class="feature-icon" loading="lazy" />
+          <img :src="resolveSrc(`images/header/${feature.icon}`)" :alt="feature.title" class="feature-icon" loading="lazy" />
           <div v-if="feature.badge" class="feature-badge" :class="feature.badgeClass">
             {{ feature.badge }}
           </div>
@@ -158,6 +158,8 @@ import { useDisplay } from 'vuetify'
 import { watch } from 'vue'
 import { itemsSliderDesktop, itemsSliderMobile, menuItems, features } from '../../utils/data/mockDataHeader'
 
+const baseURL = useRuntimeConfig().app.baseURL
+const resolveSrc = (src) => baseURL.replace(/\/$/, '') + '/' + src
 const drawer = ref(false)
 const isMounted = ref(false)
 const { smAndDown } = useDisplay()

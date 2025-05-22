@@ -20,12 +20,12 @@ export const collections = [
 
 export const slides = [
   {
-    imageUrl: '/images/home/carousel.png',
+    imageUrl: 'images/home/carousel.png',
   },
   {
-    imageUrl: '/images/home/carousel.png',
+    imageUrl: 'images/home/carousel.png',
   },
   {
-    imageUrl: '/images/home/carousel.png',
+    imageUrl: 'images/home/carousel.png',
   }
 ];
