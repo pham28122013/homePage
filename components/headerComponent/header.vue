@@ -175,7 +175,7 @@ watch(drawer, (val) => {
 })
 
 onMounted(() => {
-  isMounted.value = true
+  isMounted.value = true;
 })
 </script>
 
