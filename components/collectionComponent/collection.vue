@@ -3,10 +3,22 @@
     <div class="d-flex justify-space-between align-center mb-4">
       <h3 class="barlow-32-black-italic-uppercase">New NFT Collections</h3>
       <div>
-        <v-btn icon variant="text" color="white" class="carousel-control left" @click="prev">
+        <v-btn
+          icon
+          variant="text"
+          color="white"
+          class="carousel-control left"
+          @click="prev"
+        >
           <v-icon>mdi-chevron-left</v-icon>
         </v-btn>
-        <v-btn icon variant="text" color="white" class="carousel-control right" @click="next">
+        <v-btn
+          icon
+          variant="text"
+          color="white"
+          class="carousel-control right"
+          @click="next"
+        >
           <v-icon>mdi-chevron-right</v-icon>
         </v-btn>
       </div>
@@ -27,9 +39,8 @@
           <v-img
             v-for="(item, i) in chunk"
             :key="i"
-            :src="item"
+            :src="resolveSrc(item)"
             class="rounded-lg nft-img"
-            
             cover
             :class="{ 'mr-4': i !== chunk.length - 1 }"
           />
@@ -42,6 +53,9 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useDisplay } from 'vuetify'
+import { useResolveSrc } from '../../utils/common/resolveSrc'
+
+const { resolveSrc } = useResolveSrc()
 
 const props = defineProps({
   items: Array
@@ -51,7 +65,7 @@ const { smAndDown } = useDisplay()
 const active = ref(0)
 
 // chunkSize responsive: 3 (mobile), 6 (desktop)
-const chunkSize = computed(() => smAndDown.value ? 3 : 6)
+const chunkSize = computed(() => (smAndDown.value ? 3 : 6))
 
 const chunkedItems = computed(() => {
   const chunks = []
@@ -66,7 +80,8 @@ const next = () => {
 }
 
 const prev = () => {
-  active.value = (active.value - 1 + chunkedItems.value.length) % chunkedItems.value.length
+  active.value =
+    (active.value - 1 + chunkedItems.value.length) % chunkedItems.value.length
 }
 </script>
 

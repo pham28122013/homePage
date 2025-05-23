@@ -31,12 +31,19 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
+// Components
 import Collection from '@/components/collectionComponent/collection.vue'
 import Calendar from '@/components/calendarComponent/calendar.vue'
 import Card from '@/components/cardComponent/card.vue'
-import { cards, collections, slides } from '../../utils/data/mockDataHome'
-import { ref } from 'vue'
 
+// Data
+import { cards, collections, slides } from '../../utils/data/mockDataHome'
+
+// Utils
+import { useResolveSrc } from '../../utils/common/resolveSrc'
+const { resolveSrc } = useResolveSrc()
 </script>
 
 <style lang="scss" scoped>

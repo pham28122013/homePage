@@ -6,7 +6,7 @@
 
     <div>
       <v-img
-        :src="image"
+        :src="resolveSrc(image)"
         alt="Promotion NFT"
         class="rounded-lg promotion-image mx-auto mb-2"
         cover
@@ -17,6 +17,10 @@
 </template>
 
 <script setup>
+import { useResolveSrc } from '../../utils/common/resolveSrc'
+
+const { resolveSrc } = useResolveSrc()
+
 defineProps({
   title: String,
   image: String,

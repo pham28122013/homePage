@@ -12,10 +12,8 @@
 
 .responsive-height-img {
   height: 240px;
-}
 
-@media (max-width: 600px) {
-  .responsive-height-img {
+  @media (max-width: 600px) {
     height: 170px;
   }
 }

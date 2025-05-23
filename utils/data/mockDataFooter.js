@@ -7,8 +7,8 @@ export const footerSections = [
       { text: 'Terms & Conditions' },
       { text: 'Help center' },
       { text: 'Privacy Policy' },
-      { text: 'Affiliate' }
-    ]
+      { text: 'Affiliate' },
+    ],
   },
   {
     title: 'PRODUCTS',
@@ -18,8 +18,8 @@ export const footerSections = [
       { text: 'Swaps' },
       { text: 'NFT Launchpad' },
       { text: 'Runes Platform' },
-      { text: 'Creator Dashboard' }
-    ]
+      { text: 'Creator Dashboard' },
+    ],
   },
   {
     title: 'Resources',
@@ -28,14 +28,14 @@ export const footerSections = [
       { text: 'API', link: '#' },
       { text: 'Feature Requests', link: '#' },
       { text: 'Trust & Safety', link: '#' },
-      { text: 'Sitemap', link: '#' }
-    ]
+      { text: 'Sitemap', link: '#' },
+    ],
   },
   {
     title: 'CONTACT US',
     items: [
       { text: 'support@techmail', isEmail: true },
-      { text: 'affiliate@tech.com', isEmail: true }
-    ]
-  }
+      { text: 'affiliate@tech.com', isEmail: true },
+    ],
+  },
 ];
