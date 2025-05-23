@@ -4,7 +4,7 @@ Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduct
 
 ## 🔗 Demo Website
 
-👉 https://pham28122013.github.io/homePage
+👉 https://pham28122013.github.io/homePage/homePage/
 
 ## 🖼️ Screenshot
 
